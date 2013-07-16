@@ -4,7 +4,7 @@ function user_begining {
    echo $(echo $USER | cut -c1-2)
 }
 
-PROMPT='%{$fg[blue]%}$(user_begining)%{$fg[blue]%}@%m%{$fg[green]%} %{$fg[green]%}%c \
+PROMPT='%{$fg[green]%}$(user_begining)%{$fg[green]%}@%m%{$fg[green]%} %{$fg[green]%}%c \
 $(git_prompt_info)\
 %{$fg[red]%}%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
